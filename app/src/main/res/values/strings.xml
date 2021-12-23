@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">DRL</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Cun Đẹp Trai</string>
+    <string name="nav_header_subtitle">1911505310144@sv.ute.udn.vn</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Chấm Điểm Điểm Rèn Luyện</string>
+    <string name="menu_gallery">Thông Báo</string>
+    <string name="menu_pass">Đổi Mật Khẩu</string>
+    <string name="menu_logout">Đăng Xuất</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

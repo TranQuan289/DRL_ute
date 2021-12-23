@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "40325686104",
+    "project_id": "drlute-8b71a",
+    "storage_bucket": "drlute-8b71a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:40325686104:android:a6e7da9707a700bbf87b2d",
+        "android_client_info": {
+          "package_name": "com.example.android.drl"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "40325686104-sfo3ef4magtfjsh7m3fe66v6fh14hgso.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.android.drl",
+            "certificate_hash": "09b8700a0f9dc3a7b2cc09e9efbec804b3524ea6"
+          }
+        },
+        {
+          "client_id": "40325686104-7ajhqs77pdm37ksocmvvupplm6aq87me.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD-KTYiAt-rUEpUF5l65K29GoNuAjwpkAk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "40325686104-7ajhqs77pdm37ksocmvvupplm6aq87me.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
