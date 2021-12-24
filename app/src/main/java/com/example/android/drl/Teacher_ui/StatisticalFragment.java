@@ -61,10 +61,10 @@ public class StatisticalFragment extends Fragment {
                         count4++;
                     }
                 }
-                txt_count.setText("/" + String.valueOf(count));
-                txt_count1.setText("/" + String.valueOf(count));
-                txt_count2.setText("/" + String.valueOf(count));
-                txt_count3.setText("/" + String.valueOf(count));
+                txt_count.setText("/ " + String.valueOf(count));
+                txt_count1.setText("/ " + String.valueOf(count));
+                txt_count2.setText("/ " + String.valueOf(count));
+                txt_count3.setText("/ " + String.valueOf(count));
                 txt_count_mark.setText(String.valueOf(count1));
                 txt_count_mark_xs.setText(String.valueOf(count2));
                 txt_count_mark_g.setText(String.valueOf(count3));

@@ -74,7 +74,7 @@ public class ChangePassFragment extends Fragment {
             public void onDataChange(DataSnapshot dataSnapshot) {
 
                 String value = dataSnapshot.getValue(String.class);
-                txt_name.setText("Họ và Tên: " + value);
+                txt_name.setText(value);
             }
 
             @Override
@@ -89,7 +89,6 @@ public class ChangePassFragment extends Fragment {
             changePass();
         } else {
             txt_notify.setText("Mật khẩu cũ không đúng!");
-            Toast.makeText(getActivity(), txt_email.getText(), Toast.LENGTH_SHORT).show();
         }
     }
 
@@ -100,7 +99,7 @@ public class ChangePassFragment extends Fragment {
             String password = edt_curr_pass.getText().toString().trim();
             LoginUser(email,password);
         } catch (Exception exception) {
-            txt_notify.setText("Bạn cần nhập đầy đủ thông tin");
+            txt_notify.setText("Bạn cần nhập đầy đủ thông tin!");
         }
     }
 
@@ -109,7 +108,7 @@ public class ChangePassFragment extends Fragment {
             pass1 = String.valueOf(edt_pass.getText());
             pass2 = String.valueOf(edt_pass2.getText());
             if (pass1.length() < 6) {
-                txt_notify.setText("Mật khẩu phải lớn hơn 6 kí tự!");
+                txt_notify.setText("Mật khẩu mới phải lớn hơn 6 kí tự!");
             } else if (pass1.equals(pass2)) {
                 FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
                 user.updatePassword(pass1)
@@ -123,10 +122,10 @@ public class ChangePassFragment extends Fragment {
                             }
                         });
             } else {
-                txt_notify.setText("Mật khẩu không trùng nhau!");
+                txt_notify.setText("Mật khẩu mới không trùng nhau!");
             }
         } catch (Exception e) {
-            txt_notify.setText("Bạn cần nhập đầy đủ thông tin");
+            txt_notify.setText("Bạn cần nhập đầy đủ thông tin!");
         }
     }
 
