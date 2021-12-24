@@ -111,6 +111,11 @@ public class SignInActivity extends AppCompatActivity {
                     Intent intent = new Intent(SignInActivity.this, MainTeacherActivity.class);
                     startActivity(intent);
                     finish();
+                }else{
+                    txt_ps.setText("");
+                    openDialog(Gravity.BOTTOM);
+                    startActivity(new Intent(SignInActivity.this, MainStudentActivity.class));
+                    finishAffinity();
                 }
             }
 
