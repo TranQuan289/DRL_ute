@@ -6,30 +6,31 @@
     android:layout_height="match_parent"
     android:background="#81b7d2"
     tools:context=".Start_ui.ResetPassActivity">
+
     <ImageView
         android:id="@+id/img_school"
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_gravity="center"
         android:src="@drawable/ute"
-        app:layout_constraintVertical_bias="0.2"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        />
+        app:layout_constraintVertical_bias="0.2" />
+
     <ImageView
         android:id="@+id/btn_back"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintVertical_bias="0.02"
-        app:layout_constraintHorizontal_bias="0.04"
         android:src="@drawable/ic_baseline_arrow_back_white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.04"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        />
+        app:layout_constraintVertical_bias="0.02" />
+
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/txt_email_layout"
         android:layout_width="match_parent"
@@ -37,64 +38,65 @@
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         app:hintTextColor="#512DA8"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/img_school"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintVertical_bias="0.1"
-        >
-    <EditText
-        android:id="@+id/edt_email"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:singleLine="true"
-        android:paddingLeft="20dp"
-        android:paddingTop="10dp"
-        android:paddingBottom="10dp"
-        android:paddingRight="10dp"
-        android:maxLines="1"
-        android:inputType="text"
-        android:hint="Email"
-        android:textSize="20dp"
-        android:background="@drawable/signin"
+        app:layout_constraintVertical_bias="0.1">
 
-        />
+        <EditText
+            android:id="@+id/edt_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/signin"
+            android:hint="Email"
+            android:inputType="text"
+            android:maxLines="1"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            android:singleLine="true"
+            android:textSize="20dp"
+
+            />
     </com.google.android.material.textfield.TextInputLayout>
+
     <TextView
         android:id="@+id/txt_notify"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingLeft="25dp"
-        android:maxLines="1"
         android:inputType="text"
+        android:maxLines="1"
+        android:paddingLeft="25dp"
+        android:textColor="#A31C1C"
         android:textSize="15dp"
         android:textStyle="italic"
-        android:textColor="#A31C1C"
-        app:layout_constraintVertical_bias="0.05"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/txt_email_layout"
-        app:layout_constraintBottom_toBottomOf="parent"
-        />
+        app:layout_constraintVertical_bias="0.05" />
+
     <Button
         android:id="@+id/btn_send"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
         android:background="@drawable/signin_button"
         android:hint="GỬI EMAIL XÁC NHẬN"
         android:paddingLeft="25dp"
         android:paddingTop="15dp"
         android:paddingRight="25dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginRight="30dp"
         android:paddingBottom="15dp"
-        app:layout_constraintVertical_bias="0.2"
         android:textColorHint="@color/white"
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_notify" />
+        app:layout_constraintTop_toBottomOf="@+id/txt_notify"
+        app:layout_constraintVertical_bias="0.2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

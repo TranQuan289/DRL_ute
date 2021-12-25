@@ -36,33 +36,10 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:paddingTop="60dp"
+            android:paddingBottom="70dp"
             android:text="Thông Báo Đã Được Gửi"
             android:textColor="#FFA2C1F4"
             android:textSize="22dp"
-            android:paddingBottom="70dp"
             android:textStyle="bold" />
-
-<!--        <TextView-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_gravity="center"-->
-<!--            android:paddingTop="13dp"-->
-<!--            android:text="Lưu ý: Kiểm tra hộp thư rác nếu không thấy thư"-->
-<!--            android:textColor="#C52D2D"-->
-<!--            android:textStyle="italic" />-->
-
-<!--        <Button-->
-<!--            android:id="@+id/btn_ok"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_gravity="center"-->
-<!--            android:layout_marginTop="30dp"-->
-<!--            android:layout_marginBottom="20dp"-->
-<!--            android:background="@drawable/dialog_button"-->
-<!--            android:paddingLeft="20dp"-->
-<!--            android:paddingRight="20dp"-->
-<!--            android:text="Xác Nhận" />-->
-
-
     </LinearLayout>
 </LinearLayout>

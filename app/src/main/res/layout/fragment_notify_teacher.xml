@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".Teacher_ui.NotifyFragment">
 
     <ImageView
@@ -11,13 +11,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/ic_baseline_back_24"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.04"
-        app:layout_constraintVertical_bias="0.02"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        />
+        app:layout_constraintVertical_bias="0.02" />
 
     <TextView
         android:id="@+id/send"
@@ -25,75 +24,70 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:text="Gửi Thông Báo"
+        android:textColor="#4058DF"
         android:textSize="25dp"
         android:textStyle="bold"
-        android:textColor="#4058DF"
-        app:layout_constraintVertical_bias="0.15"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        />
+        app:layout_constraintVertical_bias="0.15" />
 
     <EditText
         android:id="@+id/edt_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:maxLines="1"
         android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
         android:hint="Tiêu Đề"
-        android:textColor="#BD67CC"
-        android:textStyle="bold"
-        android:textSize="20dp"
-        android:singleLine="true"
-        android:paddingBottom="15dp"
+        android:maxLines="1"
+        android:paddingLeft="20dp"
         android:paddingTop="10dp"
         android:paddingRight="10dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginLeft="20dp"
-        android:paddingLeft="20dp"
+        android:paddingBottom="15dp"
+        android:singleLine="true"
+        android:textColor="#BD67CC"
         android:textColorHint="#BD67CC"
-        app:layout_constraintVertical_bias="0.1"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/send"
-        app:layout_constraintBottom_toBottomOf="parent"
-        />
+        app:layout_constraintVertical_bias="0.1" />
 
     <EditText
         android:id="@+id/edt_content"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:hint="Nội Dung"
-
-        android:layout_marginRight="20dp"
         android:layout_marginLeft="20dp"
-        android:paddingLeft="20dp"
-        android:paddingRight="15dp"
-        android:lines="10"
-        android:gravity="left"
-        android:paddingTop="15dp"
-        android:paddingBottom="15dp"
+        android:layout_marginRight="20dp"
         android:background="@drawable/edt_pass"
-        app:layout_constraintVertical_bias="0.05"
+        android:gravity="left"
+        android:hint="Nội Dung"
+        android:lines="10"
+        android:paddingLeft="20dp"
+        android:paddingTop="15dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/edt_title"
-        app:layout_constraintBottom_toBottomOf="parent"
-        />
+        app:layout_constraintVertical_bias="0.05" />
 
     <Button
         android:id="@+id/btn_send"
         android:layout_width="wrap_content"
-        android:layout_gravity="center"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/button_pass"
         android:text="GỬI"
         android:textStyle="bold"
-        android:background="@drawable/button_pass"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/edt_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        />
+        app:layout_constraintTop_toBottomOf="@id/edt_content" />
 </androidx.constraintlayout.widget.ConstraintLayout>
