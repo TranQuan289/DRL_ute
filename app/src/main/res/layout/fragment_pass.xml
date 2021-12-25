@@ -36,69 +36,91 @@
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toBottomOf="@id/txt_name"
             app:layout_constraintVertical_bias="0.05" />
-
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edt_curr_pass_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        app:passwordToggleEnabled="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt_email"
+        app:layout_constraintVertical_bias="0.3"
+        >
         <EditText
             android:id="@+id/edt_curr_pass"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
             android:background="@drawable/edt_pass"
-            android:hint="Nhập Mật Khẩu Cũ"
+            android:hint="Mật Khẩu Cũ"
             android:maxLines="1"
+            android:inputType="textPassword"
+            android:singleLine="true"
             android:paddingLeft="30dp"
             android:paddingTop="10dp"
             android:paddingBottom="10dp"
-            android:password="true"
             android:textSize="20dp"
+             />
+    </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/edt_pass_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            app:passwordToggleEnabled="true"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintHorizontal_bias="0.1"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/txt_email"
-            app:layout_constraintVertical_bias="0.3" />
-
+            app:layout_constraintTop_toBottomOf="@id/edt_curr_pass_layout"
+            app:layout_constraintVertical_bias="0.15"
+            >
         <EditText
             android:id="@+id/edt_pass"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
             android:background="@drawable/edt_pass"
-            android:hint="Nhập Mật Khẩu"
+            android:hint="Mật Khẩu Mới"
             android:maxLines="1"
             android:paddingLeft="30dp"
             android:paddingTop="10dp"
             android:paddingBottom="10dp"
-            android:password="true"
-            android:textSize="20dp"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:textSize="20dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/edt_pass2_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            app:passwordToggleEnabled="true"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintHorizontal_bias="0.1"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/edt_curr_pass"
-            app:layout_constraintVertical_bias="0.15" />
-
+            app:layout_constraintTop_toBottomOf="@id/edt_pass_layout"
+            app:layout_constraintVertical_bias="0.15"
+            >
         <EditText
             android:id="@+id/edt_pass2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
             android:background="@drawable/edt_pass"
-            android:hint="Nhập Mật Khẩu"
+            android:hint="Nhập Lại Mật Khẩu Mới"
             android:maxLines="1"
+            android:inputType="textPassword"
+            android:singleLine="true"
             android:paddingLeft="30dp"
             android:paddingTop="10dp"
             android:paddingBottom="10dp"
-            android:password="true"
-            android:textSize="20dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintHorizontal_bias="0.1"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/edt_pass"
-            app:layout_constraintVertical_bias="0.15" />
+            android:textSize="20dp" />
+        </com.google.android.material.textfield.TextInputLayout>
 
         <TextView
             android:id="@+id/txt_notify"
@@ -112,7 +134,7 @@
             app:layout_constraintHorizontal_bias="0.1"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/edt_pass2"
+            app:layout_constraintTop_toBottomOf="@id/edt_pass2_layout"
             app:layout_constraintVertical_bias="0.15" />
 
         <Button

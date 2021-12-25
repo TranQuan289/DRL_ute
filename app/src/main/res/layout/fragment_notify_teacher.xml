@@ -45,6 +45,7 @@
         android:textColor="#BD67CC"
         android:textStyle="bold"
         android:textSize="20dp"
+        android:singleLine="true"
         android:paddingBottom="15dp"
         android:paddingTop="10dp"
         android:paddingRight="10dp"
