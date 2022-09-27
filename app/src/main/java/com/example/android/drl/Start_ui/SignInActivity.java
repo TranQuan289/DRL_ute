@@ -31,7 +31,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 public class SignInActivity extends AppCompatActivity {
-    private EditText txt_email, txt_pass;
+    private EditText txt_email , txt_pass;
     private TextView txt_ps, txt_forgot;
     private Button btn_login;
     private FirebaseAuth mAuth;
@@ -46,6 +46,8 @@ public class SignInActivity extends AppCompatActivity {
         txt_pass = findViewById(R.id.txt_pass);
         txt_ps = findViewById(R.id.txt_ps);
         txt_forgot = findViewById(R.id.txt_forgot);
+        txt_email.setText("1911505310144@sv.ute.udn.vn");
+        txt_pass.setText("123456");
         txt_forgot.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

@@ -3,6 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Android Native/DRL_ute/app/src/main/res/layout/activity_sign_in.xml" value="0.11068895643363728" />
+        <entry key="..\:/Android Native/DRL_ute/app/src/main/res/layout/fragment_pass.xml" value="0.22760416666666666" />
         <entry key="..\:/android/DRL/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1" />
         <entry key="..\:/android/DRL/app/src/main/res/drawable/button_pass.xml" value="0.13368055555555555" />
         <entry key="..\:/android/DRL/app/src/main/res/drawable/custom_color_bottom.xml" value="0.13368055555555555" />
